@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
 import PostItem from './PostItem';
 import { getPosts } from '../../actions/post';
+import PostForm from './PostForm';
 
 const Posts = ({ getPosts, post: { posts, post, loading } }) => {
   useEffect(() => {
@@ -17,9 +18,9 @@ const Posts = ({ getPosts, post: { posts, post, loading } }) => {
       <p className='lead'>
         <i className='fas fa-user'></i> Welcome to the Comunity
       </p>
-      {/* POST Form */}
+      <PostForm />
       <div className='posts'>
-        {posts.map(post => (
+        {posts.map((post) => (
           <PostItem key={post._id} post={post} />
         ))}
       </div>
@@ -29,11 +30,11 @@ const Posts = ({ getPosts, post: { posts, post, loading } }) => {
 
 Posts.propTypes = {
   getPosts: PropTypes.func.isRequired,
-  post: PropTypes.object.isRequired
+  post: PropTypes.object.isRequired,
 };
 
-const mapStateToProps = state => ({
-  post: state.post
+const mapStateToProps = (state) => ({
+  post: state.post,
 });
 
 export default connect(mapStateToProps, { getPosts })(Posts);
