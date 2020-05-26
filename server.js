@@ -11,7 +11,7 @@ connectDB();
 app.use(express.json());
 
 // Remove This so it runs in aws
-app.get('/', (req, res) => res.send('API Running'));
+// app.get('/', (req, res) => res.send('API Running'));
 
 // Define Routes
 app.use('/api/users', require('./routes/api/users'));
@@ -19,7 +19,7 @@ app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/profile', require('./routes/api/profile'));
 app.use('/api/posts', require('./routes/api/posts'));
 
-// // Serve static assets in production
+// Serve static assets in production
 // if (process.env.NODE_ENV === 'production') {
 //   // Set static folder
 //   app.use(express.static('client/build'));
@@ -28,6 +28,12 @@ app.use('/api/posts', require('./routes/api/posts'));
 //     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 //   });
 // }
+
+app.use(express.static('client/build'));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+});
 
 const PORT = process.env.PORT || 5000;
 
