@@ -1,20 +1,15 @@
 {
-    "prod": {
+    "pord": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-cgapp-prod-164756-authRole",
-            "UnauthRoleArn": "arn:aws:iam::072339721992:role/amplify-cgapp-prod-164756-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::072339721992:role/amplify-cgapp-prod-164756-authRole",
+            "AuthRoleName": "amplify-cgapp-pord-210759-authRole",
+            "UnauthRoleArn": "arn:aws:iam::072339721992:role/amplify-cgapp-pord-210759-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::072339721992:role/amplify-cgapp-pord-210759-authRole",
             "Region": "us-east-1",
-            "DeploymentBucketName": "amplify-cgapp-prod-164756-deployment",
-            "UnauthRoleName": "amplify-cgapp-prod-164756-unauthRole",
-            "StackName": "amplify-cgapp-prod-164756",
-            "StackId": "arn:aws:cloudformation:us-east-1:072339721992:stack/amplify-cgapp-prod-164756/5447d840-9fab-11ea-a0a6-12002b7e66d1",
+            "DeploymentBucketName": "amplify-cgapp-pord-210759-deployment",
+            "UnauthRoleName": "amplify-cgapp-pord-210759-unauthRole",
+            "StackName": "amplify-cgapp-pord-210759",
+            "StackId": "arn:aws:cloudformation:us-east-1:072339721992:stack/amplify-cgapp-pord-210759/a8613150-9fcf-11ea-8f87-0e1ad0c392f9",
             "AmplifyAppId": "do5aqlk6jdae8"
-        },
-        "categories": {
-            "auth": {
-                "cgapp50ece84a": {}
-            }
         }
     }
 }
