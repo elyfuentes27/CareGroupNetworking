@@ -1,0 +1,17 @@
+{
+    "projectName": "CGApp",
+    "version": "3.0",
+    "frontend": "javascript",
+    "javascript": {
+        "framework": "react",
+        "config": {
+            "SourceDir": "client/build",
+            "DistributionDir": "client/build",
+            "BuildCommand": "npm run aws-postbuild",
+            "StartCommand": "npm run start"
+        }
+    },
+    "providers": [
+        "awscloudformation"
+    ]
+}

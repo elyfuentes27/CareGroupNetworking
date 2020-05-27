@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/routes",
+            "lambdaFunction": "cgappApi",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "cgapi",
+    "apiName": "cgapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "cgappApi"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-cgapp-prod-164756-authRole",
+        "unAuthRoleName": "amplify-cgapp-prod-164756-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "cgappApi",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
