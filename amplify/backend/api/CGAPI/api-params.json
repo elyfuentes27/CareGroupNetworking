@@ -1,52 +1,46 @@
 {
-    "paths": [
-        {
-            "name": "/items",
-            "lambdaFunction": "CGAppApi",
-            "privacy": {
-                "open": true
-            }
-        },
-        {
-            "name": "/routes",
-            "lambdaFunction": "n",
-            "privacy": {
-                "open": true
-            }
-        }
-    ],
-    "resourceName": "CGAPI",
-    "apiName": "CGAPI",
-    "functionArns": [
-        {
-            "lambdaFunction": "CGAppApi"
-        },
-        {
-            "lambdaFunction": "n"
-        }
-    ],
-    "privacy": {
-        "auth": 0,
-        "unauth": 0,
-        "authRoleName": "amplify-cgapp-pord-210759-authRole",
-        "unAuthRoleName": "amplify-cgapp-pord-210759-unauthRole"
+  "paths": [
+    {
+      "name": "/api",
+      "lambdaFunction": "CGAppApi",
+      "privacy": {
+        "open": true
+      }
     },
-    "dependsOn": [
-        {
-            "category": "function",
-            "resourceName": "CGAppApi",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        },
-        {
-            "category": "function",
-            "resourceName": "n",
-            "attributes": [
-                "Name",
-                "Arn"
-            ]
-        }
-    ]
+    {
+      "name": "/routes",
+      "lambdaFunction": "n",
+      "privacy": {
+        "open": true
+      }
+    }
+  ],
+  "resourceName": "CGAPI",
+  "apiName": "CGAPI",
+  "functionArns": [
+    {
+      "lambdaFunction": "CGAppApi"
+    },
+    {
+      "lambdaFunction": "n"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-cgapp-pord-210759-authRole",
+    "unAuthRoleName": "amplify-cgapp-pord-210759-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "CGAppApi",
+      "attributes": ["Name", "Arn"]
+    },
+    {
+      "category": "function",
+      "resourceName": "n",
+      "attributes": ["Name", "Arn"]
+    }
+  ]
 }
