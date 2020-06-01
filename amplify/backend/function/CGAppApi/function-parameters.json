@@ -1,9 +1,0 @@
-{
-    "permissions": {
-        "hosting": {
-            "S3AndCloudFront": [
-                "create"
-            ]
-        }
-    }
-}
